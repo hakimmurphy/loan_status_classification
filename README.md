@@ -2,6 +2,8 @@
 
 Predict loan_status from tabular application data and establish a clean, reproducible baseline for risk triage and iteration.
 
+---
+
 ## 📦 What's inside
 - Notebook: Loans_modified_interview.ipynb
 - Task: Binary/multi-class classification of loan_status
@@ -9,10 +11,14 @@ Predict loan_status from tabular application data and establish a clean, reprodu
 - Result (baseline): ~0.71 test accuracy with confusion-matrix evaluation
 - Focus: Clear preprocessing, simple baseline, and next-step roadmap
 
+--- 
+
 ## 🧰 Tech stack
 - Python • pandas • numpy
 - Scikit-learn (train_test_split, DecisionTreeClassifier, metrics)
 - Matplotlib • Seaborn (EDA & plots)
+
+--- 
 
 ## 📂 Data
 - Source file: loans_modified.csv
@@ -37,6 +43,8 @@ pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 jupyter notebook Loans_modified_interview.ipynb
 ```
 
+---
+
 ## 📝 What the notebook does
 - Load & Inspect – read CSV, basic schema checks, class balance overview.
 - Clean & Prepare – drop ID-like columns, handle nulls/dupes, get_dummies for categoricals.
@@ -45,9 +53,13 @@ jupyter notebook Loans_modified_interview.ipynb
 - Evaluate – accuracy score + confusion matrix to spot error patterns.
 - Takeaways – where features/quality limit performance; next experiments to try.
 
+---
+
 ## 📈 Baseline result
 - DecisionTree (depth=3): ~0.71 test accuracy
 - Confusion matrix included in the notebook for class-wise performance
+
+---
 
 ## 🧪 Next steps (roadmap)
 - Models: Logistic Regression, Random Forest, Gradient Boosting / XGBoost, calibrated probabilities
@@ -57,7 +69,19 @@ jupyter notebook Loans_modified_interview.ipynb
 - Explainability: Feature importance, permutation importance, SHAP
 - Packaging: Pipeline + ColumnTransformer; save model (joblib/pickle) for reuse
 
+---
+
 ## 🧑‍💻 Reproducibility tips
 - Pin versions in requirements.txt
 - Set random_state=42 for splits/models
 - Keep raw vs. processed data distinct (if you add a /data folder)
+
+---
+
+## 📄 License
+MIT
+
+---
+
+## 🗣️ Author
+Hakim Murphy
